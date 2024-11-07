@@ -1,0 +1,24 @@
+.img {
+    position: absolute;
+    top:300px;
+    right: 350px;
+}
+.main-1 {
+    z-index: 999;
+    border-radius: 30px;
+}
+
+.main-2 {
+    z-index: 998;
+    top: 250px;
+    right: 100px;
+    border-radius: 30px;
+    width: 320px;
+    height: 426px;
+}
+
+.about_me-photo {
+    border-radius: 10px;
+    float: right;
+    margin: -55px 110px;
+}

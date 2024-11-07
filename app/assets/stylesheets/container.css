@@ -1,0 +1,34 @@
+.start-container {
+    width: 100%;
+    height: 80vh;
+    background-color: #95A78D;
+}
+
+.about_me-container {
+    width: 100%;
+    height: 100%;
+    background-color: #D7D0C8;
+    padding-bottom: 70px;
+}
+
+.classes-container {
+    background-color: #95A78D;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.price-container {
+    background-color: #D7D0C8;
+    font-size: 36px;
+    text-align: center;
+}
+.price-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+

@@ -1,0 +1,210 @@
+<%= render "menu" %>
+
+<div class = "start-container">
+    <div class ="start-wrapper">
+        <div class = "left-pad">
+            <h1 class = "start-title"> Вводное занятие для старта эффективного обучения!</h1>
+            <h2 class = "start-subtitle"> Персональный репетитор с индивидуальным подходом к каждому ученику. </h2>
+        </div>
+        <div class = "right-pad">
+            <div> <%= image_tag('main1.jpg',style: "width:320px; height:426px", class: "img main-1")%> </div>
+            <div> <%= image_tag('main2.jpg', class: "img main-2")%> </div>
+        </div>
+    </div>
+</div>
+
+<%= render "paper1" %>
+
+<div class = "about_me-container">
+    <h1 class = "about-title">Позвольте представить себя — ваш будущий репетитор!</h1>
+    <div class = "right-pad">
+        <div> <%= image_tag('aboutme.jpg',style: "width:378px; height:528px", class: "about_me-photo")%> </div>
+    </div>
+ 
+    <div class = "left">
+        <p class = "about-item">Привет, меня зовут Карина, я преподаватель с более чем 4-летним опытом работы в сфере образования. Мой путь начался с НИЯУ МИФИ, где я получила образование по специальности "Ядерная физика и технологии", но уже давно нашла себя в обучении студентов. Мой подход — это индивидуальная программа, гибкость и внимание к каждому ученику, что позволяет достичь отличных результатов.</p>
+    </div>
+</div>
+
+<%= render "paper2" %>
+
+<div class = "classes-container">
+    <h1 class = "classes-title">Как проходят уроки и что вас ждет? </h1>
+    <div class = "classes-wrapper">
+        <div class="class-item">
+            <div class = "class-text-wrapper">
+                <span class="class-title">Знакомство с учеником и его родителями</span>
+                <p class = "class-subtitle"> Для меня важно уделять время пониманию ваших потребностей и пожеланий.</p>
+            </div>
+        </div>
+        <div class="class-item">
+            <div class = "class-text-wrapper">
+                <span class="class-title">Вводный урок</span>
+                <p class = "class-subtitle"> Оценим текущие знания и определим слабые места.</p>
+            </div>
+        </div>
+        <div class="class-item">
+            <div class = "class-text-wrapper">
+                <span class="class-title">Полноценное занятие</span>
+                <p class = "class-subtitle"> Непосредственно обучение с учетом выбранной программы и методики.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "title-wrapper">
+        <h1 class = "upper-title">Что нужно для</h1>
+        <h1 class = "down-title">успешного занятия?</h1>
+    </div>
+    <ul class = "grid">
+        <li class = "post-1">
+            <i class="fa fa-child fa-4x" aria-hidden="true"></i>
+            <p class = "class-subtitle"> Желание ученика заниматься и прокачивать свои знания </p>
+        </li>
+        <li class = "post-2"> </li>
+        <li class = "post-3">
+            <i class="fa fa-video-camera fa-4x" aria-hidden="true"></i>
+            <p class = "class-subtitle"> Занятия проходят с использованием веб-камеры </p>
+        </li>
+        <li class = "post-4"></li>
+        <li class = "post-5"></li>
+        <li class = "post-8">
+            <i class="fa fa-globe fa-4x" aria-hidden="true"></i>
+            <p class = "class-subtitle"> Хорошая скорость интернета </p>
+        </li>
+        <li class = "post-7"></li>
+        <li class = "post-6">
+            <i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i>
+            <p class = "class-subtitle"> Занятия проходят на платформе MIRO (инетрактивная доска, к которой у ученика есть доступ 24/7) </p>
+        </li>
+    </ul>
+</div>
+
+<%= render "paper1" %>
+
+<div class = "price-container">
+    <h1 class = "price-title"> Цены и услуги </h1>
+    <div class = "price-wrapper">
+        <ul class = "price-list-math">
+            <u><h1 class = "price-subtitle"> Математика/Физика </h1></u>
+            <li class = "price-item">
+                <p>Повышение успеваемости</p>
+                <hr class = "price-line">
+                <p>2000</p>
+            </li>
+            <li class = "price-item">
+                <p>Помощь с выполнением домашнего задания </p>
+                <hr class = "price-line">
+                <p>1500</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к МЦКО</p>
+                <hr class = "price-line">
+                <p>2000</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к ВПР</p>
+                <hr class = "price-line">
+                <p>2000</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к ОГЭ</p>
+                <hr class = "price-line">
+                <p>2500</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к ЕГЭ (Базовый уровень, математика)</p>
+                <hr class = "price-line">
+                <p>2500</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к ЕГЭ (Профильный уровень,математика)</p>
+                <hr class = "price-line">
+                <p>2500</p>
+            </li>
+        </ul>
+        <ul class = "price-list-obsh">
+            <u><h1 class = "price-subtitle"> Обществознание </h1></u>
+            <li class = "price-item">
+                <p>Повышение успеваемости</p>
+                <hr class = "price-line">
+                <p>1500</p>
+            </li>
+            <li class = "price-item">
+                <p>Помощь с выполнением домашнего задания</p>
+                <hr class = "price-line">
+                <p>1000</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к МЦКО</p>
+                <hr class = "price-line">
+                <p>1500</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к ВПР</p>
+                <hr class = "price-line">
+                <p>1500</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к ОГЭ</p>
+                <hr class = "price-line">
+                <p>2000</p>
+            </li>
+            <li class = "price-item">
+                <p>Подготовка к ЕГЭ</p>
+                <hr class = "price-line">
+                <p>2000</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<%= render "paper2" %>
+
+<div class = "form-container">
+    <h1 class = "about-title"> Запишись на свой первый урок! </h1>
+    <%= render "form" %>
+</div>
+
+<%= render "paper1" %>
+
+<footer>
+    <h1 class = "footer-title"> Контакты и социальные сети </h1>
+    <div class = "footer-wrapper">
+        <%= link_to "https://vk.com/id380137905", target: "_blank", class:"footer-link" do %>
+            <div class="footer-item">
+                <div class="left-side">
+                    <i style="color: #0077FF" class="fa fa-vk fa-4x" aria-hidden="true"></i>
+                    <span class="footer-text">Мой профиль ВКонтакте</span>
+                </div>
+                <div class="right-side">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        <% end %>
+
+        <%= link_to "http://t.me/foxy_0_3", target: "_blank", class:"footer-link" do %>
+            <div class = "footer-item">
+                <div class="left-side">
+                    <i style = "color: #229ED9" class="fa fa-telegram fa-4x" aria-hidden="true"></i>
+                    <span class = "footer-text">Чат со мной в Telegram<span>
+                </div>
+                <div class = "right-side">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        <% end %>
+
+        <%= link_to "https://wa.me/+79521784568", target: "_blank", class:"footer-link" do %>
+            <div class = "footer-item">
+                <div class="left-side">
+                    <i style = "color: #25D366" class="fa fa-whatsapp fa-4x" aria-hidden="true"></i>
+                    <span class = "footer-text">Мой канал на Whatsapp<span>
+                </div>
+                <div class = "right-side">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</footer>
+
+
