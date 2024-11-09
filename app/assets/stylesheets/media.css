@@ -446,10 +446,30 @@
     }
 
     .start-container {
-        height: 50vh;
+        height: 60vh;
     }
 
     .about_me-photo {
         display: none;
     }
+
+    .upper-title,
+    .down-title {
+        font-size: 26px;
+        padding-left: 0;
+    }
+
+    .class-subtitle {
+        font-size: 16px;
+    }
+
+    .footer-title {
+        font-size: 34px;
+        padding: 0px 10px;
+    }
+
+    .price-list-math, .price-list-obsh {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
 }
