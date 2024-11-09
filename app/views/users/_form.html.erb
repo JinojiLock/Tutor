@@ -1,8 +1,7 @@
 <%= form_for @user do |f| %>
     <% if @user.errors.any? %>
       <div id="error_explanation">
-        <h2><%= pluralize(@user.errors.count, "error") %> prohibited this contact from being saved:</h2>
-  
+        <h2><%= pluralize(@user.errors.count, "error") %> prohibited this contact from being saved: </h2>
         <ul>
           <% @user.errors.full_messages.each do |message| %>
             <li><%= message %></li>
@@ -15,45 +14,41 @@
             <p class = "form-label"><%= f.label "Введите свое имя" %></p>
             <%= f.text_field :first_name %>
         </div>
-
         <div class = "form-elem">
         <p class = "form-label"><%= f.label "Введите свою фамилию" %></p>
             <%= f.text_field :last_name %>
         </div>
-        
         <div class = "form-elem">
         <p class = "form-label"><%= f.label "Введите свой класс" %></p>
             <%= f.select :number_class, (5..11) %>
         </div>
-
         <div class = "form-elem">
             <p class = "form-label"><%= f.label "Выбери предмет" %></p>
             <%= f.select :lesson, options_for_select(["Обществознание", "Математика", "Физика"]) %>
         </div>
-
+        <div class = "form-elem">
+            <p class = "form-label"><%= f.label "Выбери направление обучения" %></p>
+            <%= f.select :lesson, options_for_select(["Повышение успеваемости", "Помощь с домашним заданием", "Помощь с выполнением домашнего задания","Подготовка к МЦКО", "Подготовка к ВПР", "Подготовка к ОГЭ", "Подготовка к ЕГЭ (Базовый уровень)", "Подготовка к ЕГЭ (Профильный уровень)","Подготовка к ЕГЭ (Обществознание)"]) %>
+        </div>
         <div class = "form-elem">
             <p class = "form-label"><%= f.label "Введите свой номер телефона" %></p>
-            <%= f.text_field :number_phone, type: "tel", pattern: '\+7-\d{3}-\d{3}-\d{2}-\d{2}', value: '+7' %>
+            <%= f.text_field :number_phone, type: "tel", pattern: "\+7-\d{3}-\d{3}-\d{2}-\d{2}", value: "+7" %>
         </div>
-
         <div class = "form-elem">
             <p class = "form-label"><%= f.label "Выберите желаемую дату" %></p>
             <%= f.date_field :record_date, value: @user.record_date.try(:strftime, "%d-%m-%Y") %>
         </div>
-
         <p class = "form-label-time"> Выберите желаемое время </p>
         <div class = "wrapper">
             <div class = "form-elem1">
                 <p class = "form-label1"> <%= f.label "С" %></p>
                 <%= f.time_field :time_start, value: @user.time_start %>
             </div>
-
             <div class = "form-elem1">
                 <p class = "form-label1"> <%= f.label "По" %></p>
                 <%= f.time_field :time_end, value: @user.time_end %>
             </div>
         </div> 
-
         <div class = "form-elem">
             <%= f.submit "Отправить" %>
         </div>

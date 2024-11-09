@@ -5,30 +5,25 @@
     height: 140px;
     overflow: hidden;
 }
-
 .svg-style{
     transform: translateY(-355px);
 }
-
 .arrow-svg1 {
     margin-top: -350px;
     margin-left: 55px;
     transform: rotate(65deg);
     width: 220px;
 }
-
 .arrow-svg2 {
     margin-top: -55px;
     transform: rotate(55deg);
     width: 450px;
 }
-
 .arrow-svg3 {
     margin-top: -55px;
     transform: rotate(55deg);
     width: 450px;
 }
-
 .arrow-svg4 {
     margin-top: -55px;
     transform: rotate(55deg);

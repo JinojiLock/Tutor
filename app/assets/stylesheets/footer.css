@@ -3,19 +3,16 @@ footer {
     padding-bottom: 70px; 
     background-color: #D7D0C8;
 }
-
 .footer-title {
     display: flex;
     justify-content: center;
     font-size: 54px;
 }
-
 .footer-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .footer-link {
     width: 100%;
     background-color: #95A78D;
@@ -25,15 +22,12 @@ footer {
     width: 50%;
     opacity: 1;
 }
-
 .footer-link:hover {
     opacity: 0.7;
 }
-
 i {
     margin: 15px 25px 0px 0px;
 }
-
 .footer-text {
     display: inline;
     text-decoration: none;
@@ -46,23 +40,17 @@ i {
     justify-content: space-between;
     align-items: center;
 }
-
 .left-side {
     display: flex;
     align-items: center;
 }
-
 .right-side {
     margin-left: auto;
 }
-
 a {
     text-decoration: none;
 }
-
 .fa-long-arrow-right {
     font-size: 36px;
     color: black;
 }
-
-

@@ -1,5 +1,4 @@
 <%= render "menu" %>
-
 <div class = "start-container">
     <div class ="start-wrapper">
         <div class = "left-pad">
@@ -12,22 +11,17 @@
         </div>
     </div>
 </div>
-
 <%= render "paper1" %>
-
 <div class = "about_me-container">
     <h1 class = "about-title">Позвольте представить себя — ваш будущий репетитор!</h1>
     <div class = "right-pad">
         <div> <%= image_tag('aboutme.jpg',style: "width:378px; height:528px", class: "about_me-photo")%> </div>
     </div>
- 
     <div class = "left">
         <p class = "about-item">Привет, меня зовут Карина, я преподаватель с более чем 4-летним опытом работы в сфере образования. Мой путь начался с НИЯУ МИФИ, где я получила образование по специальности "Ядерная физика и технологии", но уже давно нашла себя в обучении студентов. Мой подход — это индивидуальная программа, гибкость и внимание к каждому ученику, что позволяет достичь отличных результатов.</p>
     </div>
 </div>
-
 <%= render "paper2" %>
-
 <div class = "classes-container">
     <h1 class = "classes-title">Как проходят уроки и что вас ждет? </h1>
     <div class = "classes-wrapper">
@@ -77,21 +71,19 @@
         </li>
     </ul>
 </div>
-
 <%= render "paper1" %>
-
 <div class = "price-container">
     <h1 class = "price-title"> Цены и услуги </h1>
     <div class = "price-wrapper">
         <ul class = "price-list-math">
-            <u><h1 class = "price-subtitle"> Математика/Физика </h1></u>
+            <u><h1 class = "price-subtitle">Математика/Физика</h1></u>
             <li class = "price-item">
                 <p>Повышение успеваемости</p>
                 <hr class = "price-line">
                 <p>2000</p>
             </li>
             <li class = "price-item">
-                <p>Помощь с выполнением домашнего задания </p>
+                <p>Помощь с выполнением домашнего задания</p>
                 <hr class = "price-line">
                 <p>1500</p>
             </li>
@@ -156,16 +148,12 @@
         </ul>
     </div>
 </div>
-
 <%= render "paper2" %>
-
 <div class = "form-container">
     <h1 class = "about-title"> Запишись на свой первый урок! </h1>
     <%= render "form" %>
 </div>
-
 <%= render "paper1" %>
-
 <footer>
     <h1 class = "footer-title"> Контакты и социальные сети </h1>
     <div class = "footer-wrapper">
@@ -180,7 +168,6 @@
                 </div>
             </div>
         <% end %>
-
         <%= link_to "http://t.me/foxy_0_3", target: "_blank", class:"footer-link" do %>
             <div class = "footer-item">
                 <div class="left-side">
@@ -192,7 +179,6 @@
                 </div>
             </div>
         <% end %>
-
         <%= link_to "https://wa.me/+79521784568", target: "_blank", class:"footer-link" do %>
             <div class = "footer-item">
                 <div class="left-side">
@@ -206,5 +192,3 @@
         <% end %>
     </div>
 </footer>
-
-

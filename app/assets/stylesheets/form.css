@@ -3,7 +3,6 @@
     height: 100%;
     padding-bottom: 50px;
 }
-
 .form-wrapper {
     width: 40%;
     border: 1px solid black;
@@ -13,15 +12,12 @@
     box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.7);
     margin: auto;
 }
-
 .form-elem{
     margin: 15px 25px;
 }
-
 .form-elem:first-child{
     margin-top: 35px;
 }
-
 .form-label {
     display: flex;
     justify-content: start;
@@ -29,7 +25,6 @@
     font-size: 24px;
 
 }
-
 input, select {
     font-family: "Comfortaa", serif;
     background-color: #D7D0C8;
@@ -40,11 +35,9 @@ input, select {
     border-radius: 7px;
     height: 30px;
 }
-
 input:focus{
     background-color: rgb(173, 148, 114);
 }
-
 .wrapper {
     width: 90%;
     display: flex;
@@ -52,21 +45,18 @@ input:focus{
     margin: 0px;
     padding: 0px 0px;
 }
-
 .form-elem1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-size: 24px;
 }
-
 .form-label1 {
     margin-left: 90px;
     padding-bottom: 7px;
     font-size: 24px;
     margin-top: 8px;
 }
-
 .form-label-time {
     font-size: 24px;
     text-align: start;

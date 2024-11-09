@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     if @user.valid?
       @user.save
       send_message_to_telegram(@user)
-      redirect_to root_path, notice: 'Ваша заявка была успешно отправлена! В ближайшее время мы вам перезвоним.'
+      redirect_to root_path, notice: "Ваша заявка была успешно отправлена! В ближайшее время мы вам перезвоним."
     else
       puts @user.errors.full_messages
       render :new
@@ -23,7 +23,6 @@ class UsersController < ApplicationController
   def send_message_to_telegram(user)
     bot_token = ENV['TELEGRAM_BOT_TOKEN']
     chat_id = ENV['TELEGRAM_CHAT_ID']
-  
     message = <<~MESSAGE
       Новый пользователь:
       Имя: #{user.first_name}
@@ -35,13 +34,11 @@ class UsersController < ApplicationController
       Email: #{user.email}
       Номер телефона: #{user.number_phone}
     MESSAGE
-  
     url = "https://api.telegram.org/bot#{bot_token}/sendMessage"
     body = {
       chat_id: chat_id,
       text: message
     }
-  
     HTTParty.post(url, body: body)
   end
 end

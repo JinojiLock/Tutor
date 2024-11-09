@@ -5,7 +5,6 @@ const navLinks = [
     { selector: '.nav-link-5', target: 'footer' },
     { selector: '.nav-link-4', target: '.form-container' }
   ];
-  
   navLinks.forEach(link => {
     const navLink = document.querySelector(link.selector);
     navLink.addEventListener('click', function (event) {
