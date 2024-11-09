@@ -21,7 +21,8 @@ gem "telegram-bot-ruby"
 gem "dotenv-rails"
 gem "httparty"
 gem "rake"
-gem "sqlite3", group: :development, :test
+gem "sqlite3", group: [:development, :test]
+
 ruby "3.3.5"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
