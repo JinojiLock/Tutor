@@ -1,3 +1,4 @@
+/* Навигационное меню */
 nav {
     position: fixed;
     z-index: 9999;
@@ -10,13 +11,23 @@ nav {
     border: 1px solid #C8C6AF;
     opacity: 70%;
 }
-.nav-list{
+
+/* Показываем меню, когда добавлен класс .active */
+nav.active {
+    display: block; /* Меню появляется */
+    opacity: 90%;
+}
+
+/* Список навигации */
+.nav-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
 }
+
+/* Элементы навигации */
 .nav-item {
     display: flex;
     width: 20%;
@@ -26,6 +37,8 @@ nav {
     margin: 0px 25px;
     padding: 10px 5px;
 }
+
+/* Ссылки */
 .nav-link {
     display: flex;
     justify-content: center;
@@ -36,3 +49,44 @@ nav {
     width: 100%;
     transition: 0.5s ease-in;
 }
+
+/* Стиль для иконки бургера */
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+}
+
+.burger-icon span {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Иконка крестика */
+.burger-icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.burger-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+

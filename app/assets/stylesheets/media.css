@@ -161,3 +161,295 @@
         text-align: center;
     }
 }
+
+@media (max-width: 750px) {
+    .start-container {
+        height: 95vh;
+    }
+    /* Уменьшаем размер заголовков */
+    .start-title {
+        font-size: 32px;
+        padding-top: 20px;
+    }
+
+    .start-subtitle {
+        font-size: 20px;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    /* Уменьшаем отступы и ширину для левого блока */
+    .left-pad {
+        width: 100%;
+        padding-top: 10vh;
+    }
+
+    /* Изображения должны быть меньше и правильно выравниваться */
+    .main-2 {
+        position: static;
+        margin-top: 10px;
+    }
+
+    /* Изменяем расположение блоков: блок с текстом и изображения становятся друг под другом */
+    .start-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Убираем лишние отступы */
+    .right-pad {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .about-title {
+        font-size: 36px; /* Уменьшаем размер шрифта заголовка */
+        padding-top: 50px; /* Уменьшаем верхний отступ */
+    }
+
+    .about-item {
+        font-size: 20px; /* Уменьшаем размер шрифта параграфа */
+        padding-left: 20px; /* Уменьшаем отступ слева */
+        padding-top: 30px; /* Уменьшаем отступ сверху */
+        padding-right: 30px;
+    }
+     
+    .about_me-photo {
+        display: flex;
+        float: none; /* Убираем float, чтобы картинка не перекрывала текст */
+        margin: 20px auto; /* Выравниваем картинку по центру с отступами */
+    }
+
+    .about_me-container {
+        padding-bottom: 1px;
+    }
+    .classes-title {
+        font-size: 36px;
+        padding: 50px 0;
+    }
+
+    .classes-wrapper {
+        display: flex;
+    }
+
+    .class-item {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .class-title {
+        font-size: 28px;
+        margin: 10px 7px;
+    }
+
+    .class-subtitle {
+        font-size: 18px;
+        margin: 10px 7px;
+    }
+
+    .title-wrapper {
+        padding: 20px 0;
+    }
+
+    .upper-title,
+    .down-title {
+        font-size: 36px;
+        padding-left: 0;
+    }
+
+
+    .price-title {
+        font-size: 36px;
+        padding-left: 20px;
+        padding-top: 60px;
+    }
+
+    .price-subtitle {
+        font-size: 32px;
+        padding: 15px 0;
+    }
+
+    /* Переставляем списки по ширине экрана */
+    .price-list-math, .price-list-obsh {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+
+    /* Адаптация для элементов списка */
+    .price-item {
+        display: flex; 
+        justify-content: space-between;/* Каждый элемент будет в отдельной строке */
+        margin-bottom: 20px; /* Добавим отступы между элементами */
+    }
+
+    .price-line {
+        margin-top: 15px;
+        width: 80%; /* Уменьшаем ширину линии */
+    }
+
+
+    /* Убираем избыточные отступы и ширину для элементов */
+    .price-item p:first-child {
+        display: flex;
+        text-align: start;
+        font-size: 18px;
+    }
+
+    .price-item p:last-child {
+        font-size: 18px;
+    }
+
+    .form-wrapper {
+        width: 80%; /* Увеличиваем ширину формы для мобильных устройств */
+        margin: 20px auto; /* Центрируем форму */
+        padding: 20px; /* Добавляем отступы для контента */
+    }
+
+    .form-label {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+        margin-left: 0; /* Меньше отступ слева */
+    }
+
+    input, select {
+        width: 100%; /* Увеличиваем ширину полей до 100% */
+        margin: 10px 0; /* Меньше отступов по бокам */
+        font-size: 16px; /* Уменьшаем размер шрифта */
+        height: 35px; /* Увеличиваем высоту полей */
+    }
+
+    .form-elem {
+        margin: 10px 0; /* Уменьшаем отступы */
+    }
+
+    .wrapper {
+        flex-direction: row; /* Меняем расположение элементов в столбик */
+        align-items: stretch; /* Растягиваем элементы на всю ширину */
+    }
+
+    .form-elem1 {
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row; /* Располагаем элементы по вертикали */
+    }
+
+    .form-label1 {
+        margin-right: 15px;
+        margin-left: 35px;
+        margin-top: 15px;
+        font-size: 18px;
+
+    }
+    .form-label-time {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+        margin-left: 0px; /* Меньше отступ слева */
+    }
+
+    .form-submit {
+        width: 100%; /* Кнопка отправки будет на всю ширину */
+        font-size: 20px; /* Увеличиваем размер текста кнопки */
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .footer-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .footer-link {
+        width: 80%; /* увеличим ширину ссылки для мобильных устройств */
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .footer-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .left-side {
+        margin-bottom: 10px;
+    }
+
+    .right-side {
+        display: none; /* уберем стрелку на маленьких экранах */
+    }
+
+    .fa-long-arrow-right {
+        display: none; /* уберем иконку стрелки */
+    }
+
+    nav {
+        display: none; /* Скрываем меню по умолчанию */
+    }
+
+    .burger-icon {
+        display: flex; /* Показываем бургер */
+    }
+
+    .nav-list {
+        display: block;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        right: 0;
+        background-color: #95A78D;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        padding: 10px;
+    }
+
+    /* Разметка для элементов меню на мобильных устройствах */
+    .nav-item {
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+        margin: 5px 0;
+    }
+}
+
+/* Восстановление навигации при ширине экрана более 600px */
+@media (min-width: 751px) {
+    nav {
+        display: block; /* Показываем меню */
+    }
+
+    .burger-icon {
+        display: none; /* Прячем бургер */
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-2 {
+        display: none;
+    }
+
+    .start-container {
+        height: 50vh;
+    }
+
+    .about_me-photo {
+        display: none;
+    }
+}
