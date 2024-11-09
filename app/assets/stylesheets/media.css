@@ -442,11 +442,12 @@
 
 @media (max-width: 500px) {
     .main-2 {
-        display: none;
+        width: 190px;
+        height: 250px;
     }
 
     .start-container {
-        height: 60vh;
+        height: 100vh;
     }
 
     .about_me-photo {
