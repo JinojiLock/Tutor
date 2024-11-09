@@ -20,8 +20,8 @@ document.addEventListener('click', function(event) {
 // Прокрутка по клику на ссылки навигации с закрытием меню
 const navLinks = [
     { selector: '.nav-link-1', target: '.about_me-container', desktopTop: 1400, mobileTop: 1000 },
-    { selector: '.nav-link-2', target: null, desktopTop: 1350, mobileTop: 1900 },
-    { selector: '.nav-link-3', target: null, desktopTop: 3150, mobileTop: 3400 },
+    { selector: '.nav-link-2', target: null, desktopTop: 1350, mobileTop: 1150 },
+    { selector: '.nav-link-3', target: null, desktopTop: 3150, mobileTop: 2750 },
     { selector: '.nav-link-5', target: 'footer', desktopTop: 0, mobileTop: 0 }, // Для якоря
     { selector: '.nav-link-4', target: '.form-container', desktopTop: 0, mobileTop: 0 } // Для якоря
 ];
