@@ -21,8 +21,8 @@ class UsersController < ApplicationController
   end
 
   def send_message_to_telegram(user)
-    bot_token = ENV['TELEGRAM_BOT_TOKEN']
-    chat_id = ENV['TELEGRAM_CHAT_ID']
+    bot_token = ENV["TELEGRAM_BOT_TOKEN"]
+    chat_id = ENV["TELEGRAM_CHAT_ID"]
     message = <<~MESSAGE
       Новый пользователь:
       Имя: #{user.first_name}
