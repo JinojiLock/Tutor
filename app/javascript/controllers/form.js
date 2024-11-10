@@ -30,3 +30,20 @@ phoneInput.addEventListener('input', function() {
   // Устанавливаем курсор в конец поля ввода телефона
   this.setSelectionRange(this.value.length, this.value.length);
 });
+
+// Перед отправкой формы сохраняем позицию скролла
+// Сохраняем позицию скролла в localStorage при каждом изменении
+window.addEventListener("scroll", function () {
+    localStorage.setItem("scrollPosition", window.scrollY);
+  });
+  
+  // Восстанавливаем позицию скролла при загрузке страницы
+  window.addEventListener("load", function () {
+    const scrollPosition = localStorage.getItem("scrollPosition");
+    if (scrollPosition) {
+      window.scrollTo(0, parseInt(scrollPosition, 10));
+    }
+  });
+  
+
+

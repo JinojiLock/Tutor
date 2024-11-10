@@ -5,6 +5,17 @@ body {
     overflow-x: hidden;
     font-family: "Montserrat Alternates", sans-serif;
 }
+
+.flash {
+    display: block;
+    border: 1px solid #7E9575;
+    color: black;
+    background-color: #7E9575;
+    padding: 15px 10px;
+    margin: 25px 40px;
+    border-radius: 25px;
+    font-size: 22px;
+}
 /*START*/
 .start-title {
     font-size: 48px;

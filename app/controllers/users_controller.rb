@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     if @user.valid?
       @user.save
       send_message_to_telegram(@user)
-      redirect_to root_path, notice: "Ваша заявка была успешно отправлена! В ближайшее время мы вам перезвоним."
+      redirect_to root_path, notice: "Ваша заявка была успешно отправлена! В ближайшее время я с вами свяжусь!"
     else
       puts @user.errors.full_messages
       render :new
